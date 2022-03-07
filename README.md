@@ -5,6 +5,10 @@ This repository has the assembly level program which were tested on Intel 8086 m
 Note : Will be updating explanation of each code in this read me.
 
 Below are discription about the 8086 reference :https://www.javatpoint.com/8086-microprocessor
+## License & copyright
+ Yashwanth singh M ,Engineer
+Licensed under the [MIT License](LICENSE).
+
 # 8086 microprocessor
 Intel 8086
 Intel 8086 microprocessor was designed by Intel in 1976.
