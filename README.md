@@ -2,6 +2,8 @@
 
 This repository has the assembly level program which were tested on Intel 8086 microprocessor.
 
+Note : Will be updating explanation of each code in this read me.
+
 Below are discription about the 8086 reference :https://www.javatpoint.com/8086-microprocessor
 # 8086 microprocessor
 Intel 8086
