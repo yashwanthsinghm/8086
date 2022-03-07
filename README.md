@@ -49,9 +49,10 @@ Functional units of 8086
 8086 contains two independent functional units: a Bus Interface Unit (BIU) and an Execution Unit (EU).
 
 8086 Microprocessor
-Fig: Block Diagram of Intel 8086 Microprocessor (8086 Architecture)
+![image](https://user-images.githubusercontent.com/97118799/157016978-71e43b18-3b32-49ee-9e86-ff1f31266bb8.png)
 
-Bus Interface Unit (BIU)
+
+##Bus Interface Unit (BIU)
 The segment registers, instruction pointer and 6-byte instruction queue are associated with the bus interface unit (BIU).
 
 The BIU:
@@ -71,16 +72,16 @@ Data Segment Register (DS): The data, variables and constants given in the progr
 Stack Segment Register (SS): Stack segment holds addresses and data of subroutines. It also holds the contents of registers and memory locations given in PUSH instruction.
 Extra Segment Register (ES): Extra segment holds the destination addresses of some data of certain string instructions.
 Instruction Pointer (IP): The instruction pointer in the 8086 microprocessor acts as a program counter. It indicates to the address of the next instruction to be executed.
-Execution Unit (EU)
+## Execution Unit (EU)
 The EU receives opcode of an instruction from the queue, decodes it and then executes it. While Execution, unit decodes or executes an instruction, then the BIU fetches instruction codes from the memory and stores them in the queue.
 The BIU and EU operate in parallel independently. This makes processing faster.
 General purpose registers, stack pointer, base pointer and index registers, ALU, flag registers (FLAGS), instruction decoder and timing and control unit constitute execution unit (EU). Let's discuss them:
 General Purpose Registers: There are four 16-bit general purpose registers: AX (Accumulator Register), BX (Base Register), CX (Counter) and DX. Each of these 16-bit registers are further subdivided into 8-bit registers as shown below:
 16-bit registers	8-bit high-order registers	8-bit low-order registers
-AX	AH	AL
-BX	BH	BL
-CX	CH	CL
-DX	DH	DL
+AX	              AH	                         AL
+BX	              BH	                         BL
+CX	              CH	                         CL
+DX	              DH                        	 DL
 Index Register: The following four registers are in the group of pointer and index registers:
 Stack Pointer (SP)
 Base Pointer (BP)
@@ -99,12 +100,15 @@ Control Flags: It controls the operations of the execution unit. Control flags a
 Trap Flag
 Interrupt Flag
 Direction Flag
-Interrupts
+## Interrupts
 Interrupt is a process of creating a temporary halt during program execution and allows peripheral devices to access the microprocessor.
 
 Microprocessor responds to these interrupts with an interrupt service routine (ISR), which is a short program or subroutine to instruct the microprocessor on how to handle the interrupt.
 
 There are different types of interrupt in 8086:
+![image](https://user-images.githubusercontent.com/97118799/157017437-7d787354-8f0f-4db1-8237-095446295f1b.png)
+
+
 
 8086 Microprocessor
 Hardware Interrupts
@@ -138,11 +142,12 @@ TYPE 4 (overflow interrupt)
 Interrupt pointer table for 8086
 
 8086 Microprocessor
-Fig: Interrupt pointer table for 8086
+![image](https://user-images.githubusercontent.com/97118799/157017641-d5874633-9a08-4dfc-b741-ac84157dc4f8.png)
+
 
 The 8086 can handle up to 256, hardware and software interrupts.
 1KB memory acts as a table to contain interrupt vectors (or interrupt pointers), and it is called interrupt vector table or interrupt pointer table. The 256 interrupt pointers have been numbered from 0 to 255 (FF hex). The number assigned to an interrupt pointer is known as type of that interrupt. For example, Type 0, Type 1, Type 2,...........Type 255 interrupt.
-Addressing modes of 8086
+## Addressing modes of 8086
 
 The way for which an operand is specified for an instruction in the accumulator, in a general purpose register or in memory location, is called addressing mode.
 
